@@ -8,7 +8,7 @@ document.getElementById("formulario").addEventListener("submit", function (e) {
     return;
   }
 
-  const servidor = `https://vercel-proxy-tan-two.vercel.app/api/legajo?id=${legajo}`;
+  const servidor = `https://vercel-proxy-tan-two.vercel.app/api/legajo.js?id=${legajo}`;
 
   fetch(servidor)
     .then((response) => {
@@ -67,4 +67,5 @@ function calcularHoras(entrada, salida) {
   const diffHoras = diffMs / (1000 * 60 * 60);
   return diffHoras;
 }
+
 
