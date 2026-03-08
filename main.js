@@ -33,6 +33,7 @@ document.getElementById("formulario").addEventListener("submit", async function 
 
     // guardar asignaciones en cache
     localStorage.setItem("asignaciones", JSON.stringify(data));
+    console.log("localStorage guardado")
 
     mostrarAsignaciones(data);
 
@@ -129,3 +130,4 @@ function calcularHoras(entrada, salida) {
   return diffMs / (1000 * 60 * 60);
 
 }
+
